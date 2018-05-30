@@ -1,0 +1,12 @@
+body{
+    font-family: 'Times New Roman', sans-serif;
+}
+
+
+
+
+.pill-white {
+    border: 0.5px solid;
+    border-radius: 5px;
+    text-align: center;
+}
