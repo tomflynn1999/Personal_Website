@@ -5,8 +5,22 @@ body{
 
 
 
-.pill-white {
+.pill-white p {
     border: 0.5px solid;
     border-radius: 5px;
     text-align: center;
+}
+
+div > h1 {
+    font-size: 1.8rem
+}
+
+nav > p {
+    cursor: pointer;
+}
+
+.col-sm-4 p {
+    margin: 25px 20px 15px;
+    min-width: 60px;
+    padding: 1px;
 }
