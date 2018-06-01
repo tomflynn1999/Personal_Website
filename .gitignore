@@ -1,0 +1,11 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/inspectionProfiles/
+.idea/jsLibraryMappings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/personal-website.iml
+.idea/workspace.xml
+templates/
+venv/include/
+/.gitignore
+/venv/
