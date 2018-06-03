@@ -8,5 +8,15 @@ def personal_website():
     return render_template('base.html')
 
 
+@app.route('/about')
+def about():
+    return render_template('About_Me.html')
+
+
+@app.route('/interests')
+def interests():
+    return render_template('Interests.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
