@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def personal_website():
-    return render_template('base.html')
+    return render_template('base3.html')
 
 
 @app.route('/about')
