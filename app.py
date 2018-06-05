@@ -18,5 +18,10 @@ def interests():
     return render_template('Interests.html')
 
 
+@app.route('/compound')
+def compound():
+    return render_template('Compound_interest.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
