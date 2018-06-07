@@ -7,14 +7,38 @@
           integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   </head>
   <body>
-    <header class="container">
-        <h1>Coding Interests</h1>
-    </header>
-    <ul class="list-group">
-        <li class="list-group-item">Cryptography</li>
-        <li class="list-group-item">Data Visualization</li>
-        <li class="list-group-item">Image Processing</li>
-    </ul>
+      <nav class="navbar navbar-inverse" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse"
+            data-target="#example-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Tom Flynn Web Developer</a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">HOME</a></li>
+            <li><a href="{{ url_for('about') }}">About Me</a></li>
+            <li><a href="{{ url_for('interests') }}">Interests</a></li>
+            <li><a href="{{ url_for('compound') }}">Compound Interest Program</a></li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container">
+      <div class="card">
+        <div class="card-header">Coding Interests</div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">Cryptography</li>
+            <li class="list-group-item">Data Visualization</li>
+            <li class="list-group-item">Image Processing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
 
 
