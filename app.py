@@ -8,6 +8,11 @@ def personal_website():
     return render_template('base3.html')
 
 
+@app.route('/base3')
+def base3():
+    return render_template('base3.html')
+
+
 @app.route('/about')
 def about():
     return render_template('About_Me.html')
