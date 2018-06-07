@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -20,10 +20,17 @@ def interests():
 
 @app.route('/compound', methods=['GET', 'POST'])
 def compound():
-    return render_template('form.html')
+    result = None
+    if request.method == 'POST':
+        result = calculate_compound_interest(
+            p=int(request.form['principal']),
+            i=float(request.form['interest']),
+            t=int(request.form['times_per_year']),
+            n=int(request.form['years'])
+        )
+    return render_template('form.html', result=result)
 
 
-@app.route('/compound', methods=['GET', 'POST'])
 def compound_interest(principal, rate, time, amount):
 
     """
