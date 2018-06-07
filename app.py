@@ -20,7 +20,7 @@ def interests():
 
 @app.route('/compound')
 def compound():
-    return render_template('Compound_interest.html')
+    return render_template('form.html')
 
 
 if __name__ == '__main__':
