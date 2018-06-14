@@ -5,12 +5,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def personal_website():
-    return render_template('base3.html')
+    return render_template('base.html')
 
 
 @app.route('/base3')
 def base3():
-    return render_template('base3.html')
+    return render_template('base.html')
 
 
 @app.route('/about')
